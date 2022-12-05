@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+<div class="container text-center   mainbox">
+    <h1 class=" text-primary mt-5"> Dues & Fares Calculator </h1>
+
+ 
+<div class="row ">
+<div class="col-12 col-sm-12 col-md-12 ">
+<select name="origin-box  text-start" class="box  mt-3 py-2 px-2" id="origin">
+ <option value="Select">Please Select Origin</option>
+ <option value="APE">Ahmadpur East</option>
+ <option value="BWP">Bahawalpur</option>
+ <option value="MLT">Multan</option>
+ <option value="LHR">Lahore</option>
+ <option value="DGK">Dera Ghazi khan</option>
+</select>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12">
+        <select name="origin-box  text-start" class="box mt-3 py-2 px-2" id="desti">
+         <option value="Select">Please Select Destination</option>
+         <option value="APE">Ahmadpur East</option>
+         <option value="BWP">Bahawalpur</option>
+         <option value="MLT">Multan</option>
+         <option value="LHR">Lahore</option>
+         <option value="DGK">Dera Ghazi khan</option>
+        </select>
+        </div>
+</div>
+
+<div class="row">
+
+<div class="col-12 col-sm-12 col-md-6">
+ <input type="number" name="Weight"  id="weight-box" placeholder="Weight eg:1" class="mini-box">
+</div>
+<div class="col-12 col-sm-12 col-md-6">
+ <input type="date" name="date" id="date-box" placeholder="Date" class="mini-box ">
+</div>
+
+
+</div>
+
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12">
+    <button type="button" onclick="fare()" class="btn btn-primary mt-3 px-4">Check Fare!</button>
+</div>
+</div>
+
+
+
+<div class=" pt-5 text Center"></div>
+
+<h1> Result </h1>
+<div id="res">
+
+</div>
+
+
+
+
+
+</div>
+  </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
